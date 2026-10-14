@@ -31,7 +31,7 @@ The tracker below highlights the current progress of implemented systems and pla
 | Infrastructure         | Linux Server Deployment                  | 🟨 In Progress |
 | Infrastructure         | Infrastructure Documentation             | 🟨 In Progress |
 | Windows Infrastructure | Active Directory Domain Lab              | ✅ Completed |
-| Windows Infrastructuee | Provisioning Win11 VM and Domain Join    | ✅ Completed |
+| Windows Infrastructure | Provisioning Win11 VM and Domain Join    | ✅ Completed |
 | Linux Administration   | Secure Access Management (SSH Hardening) | ✅ Completed |
 | Linux Administration   | Host-Based Firewall Implementation       | ✅ Completed |
 | Linux Administration   | Internal DNS & DHCP Services             | ✅ Completed |
