@@ -14,7 +14,7 @@ Links provided below to jump to specific areas of interest.
 
 ### Overall Lab Completion
 
-Progress: **9 / 20 Projects Completed**
+Progress: **10 / 21 Projects Completed**
 
 [───────────────▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒] 50%
 
@@ -31,6 +31,7 @@ The tracker below highlights the current progress of implemented systems and pla
 | Infrastructure         | Linux Server Deployment                  | 🟨 In Progress |
 | Infrastructure         | Infrastructure Documentation             | 🟨 In Progress |
 | Windows Infrastructure | Active Directory Domain Lab              | ✅ Completed |
+| Windows Infrastructuee | Provisioning Win11 VM and Domain Join    | ✅ Completed |
 | Linux Administration   | Secure Access Management (SSH Hardening) | ✅ Completed |
 | Linux Administration   | Host-Based Firewall Implementation       | ✅ Completed |
 | Linux Administration   | Internal DNS & DHCP Services             | ✅ Completed |
@@ -114,6 +115,7 @@ The tracker below highlights the current progress of implemented systems and pla
 | Project | Description |
 |------|------|
 | [Active Directory Lab](infrastructure-projects/active_directory_deployment.md) | Windows domain services and group policy |
+| [Windows 11 VM Provisioning & Domain Join](infrastructure-projects/windows11-vm-setup-and-Domain-Join.md) | Adding End Point To Domain Controller |
 
 ---
 
