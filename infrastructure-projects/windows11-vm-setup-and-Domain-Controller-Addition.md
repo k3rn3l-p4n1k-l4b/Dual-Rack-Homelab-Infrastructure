@@ -1,4 +1,4 @@
-# Proxmox VE: Active Directory Lab Infrastructure & Windows 11 Guest Deployment
+Windows 11 Guest Deployment and Domain Join
 
 ## 📌 Project Overview
 This project documents the architectural design, deployment, and configuration of an isolated enterprise testing environment within a Proxmox VE hypervisor topology. The project focuses on deploying a Windows 11 client workstation template inside a dedicated network zone (**VLAN 40**) and successfully binding it to a pre-configured Windows Server Active Directory Domain Controller (DC). 
