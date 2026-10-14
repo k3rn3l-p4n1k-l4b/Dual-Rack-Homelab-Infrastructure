@@ -15,7 +15,7 @@ During the initial staging phase of the guest operating system media, a critical
 
 The hypervisor framework aborted the handshake, throwing an `invalid server response: '500 Can't connect to ://microsoft.com (Temporary failure in name resolution)' (500)` error, despite the asset target being fully reachable via an external workspace browser session.
 
-![Proxmox 500 DNS Error](images/Windows11DNSissueError.png)
+![Proxmox 500 DNS Error](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11DNSissueError.png)
 
 
 ### 2. Isolation & Root Cause Analysis
@@ -86,7 +86,7 @@ With hypervisor WAN reachability restored, virtualization parameters were config
    * BIOS: **OVMF (UEFI)** -> Check *Add EFI Disk* and assign it to local storage.
    * TPM Storage: Check **Add TPM** -> Select **v2.0** and map its state storage.
 
-![Proxmox 'System' configuration](images/Windows11SystemTab.png)
+![Proxmox 'System' configuration](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11SystemTab.png)
 
 5. **Disks Tab:**
    * Bus/Device: **SCSI** (Device `0`).
@@ -99,7 +99,7 @@ With hypervisor WAN reachability restored, virtualization parameters were config
    * Model: **VirtIO (paravirtualized)**.
    * VLAN Tag: Set to **`40`** to enforce logical isolation into the Active Directory environment network zone.
 
-![Network tab configuration](images/Windows11NetConfig.png)
+![Network tab configuration](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11NetConfig.png)
 
 ---
 
@@ -111,7 +111,7 @@ With hypervisor WAN reachability restored, virtualization parameters were config
 4. Navigate to the mounted VirtIO directory path: `vioscsi\w11\amd64`.
 5. Select the storage driver signature. The unallocated space will dynamically map to the provisioning window. Complete setup.
 
-![VirtIO SCSI driver injected](images/Windows11virtioInjected.png)
+![VirtIO SCSI driver injected](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11virtioInjected.png)
 
 ---
 
@@ -128,7 +128,7 @@ Because the guest is isolated within **VLAN 40** prior to local interface initia
 4. Upon return to the setup window, select **"I don't have internet"** followed by **"Continue with limited setup"**.
 5. Establish a local fallback administrative account (e.g., `LocalAdmin`) to reach the main desktop shell.
 
-![Windows 11 OOBE Prompt](images/Windows11ByPassNRO.png)
+![Windows 11 OOBE Prompt](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11ByPassNRO.png)
 
 *Note: In modern deployments, Red Hat VirtIO peripheral and network card driver integration occurs cleanly alongside storage mapping phases, resulting in automated device deployment upon landing on the system desktop.*
 
@@ -147,7 +147,7 @@ To securely link the client node with the enterprise directory infrastructure, i
    * **Default Gateway:** `10.10.40.10` (VLAN Gateway Router)
    * **Preferred DNS Server:** `10.10.40.10` (**[CRITICAL]** The exact IP address of your Active Directory Domain Controller).
 
-![TCP/IPv4 properties](images/Windows11IPv4Config.png)
+![TCP/IPv4 properties](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11IPv4Config.png)
 
 ### 2. Verify Infrastructure Interoperability
 Open an administrative PowerShell window to ensure name resolution pipelines cleanly reach the directory engine before submitting changes:
@@ -165,4 +165,4 @@ ping yourdomain.local
 3. Input authorized Domain Administrator system credentials (`YOURDOMAIN\Administrator`) when prompted by the security interface.
 4. Confirm the presence of the system welcome dialogue window, close open configuration windows, and perform a final node restart.
 
-![Welcome to the... domain success popup](images/Windows11WelcomeToDomanScreen.png)
+![Welcome to the... domain success popup](https://github.com/k3rn3l-p4n1k-l4b/Dual-Rack-Homelab-Infrastructure/blob/main/images/Windows11WelcomeToDomanScreen.png)
