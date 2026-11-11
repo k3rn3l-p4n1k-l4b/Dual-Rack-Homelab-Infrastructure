@@ -38,7 +38,7 @@ The tracker below highlights the current progress of implemented systems and pla
 | Linux Administration   | Centralized File Server                  | ✅ Completed |
 | Security               | SSH Brute-Force Mitigation (Fail2ban)    | ✅ Completed |
 | Security               | SELinux Policy Management                | ⬜ Planned |
-| Security               | Network Traffic Analysis                 | ⬜ Planned |
+| Security               | Network Traffic Analysis                 | ✅ Completed |
 | Security               | SIEM & Endpoint Deployment               | ✅ Completed |
 | Monitoring             | Infrastructure Monitoring Stack          | ⬜ Planned |
 | Automation             | Backup Automation Scripts                | ✅ Completed |
@@ -97,7 +97,7 @@ The tracker below highlights the current progress of implemented systems and pla
 |------|------|
 | [Fail2ban Intrusion Prevention](https://github.com/k3rn3l-p4n1k-l4b/10inch-rack-homelab-infrastructure/blob/main/infrastructure-projects/SSH-Brute-Force-Mitigation-Fail2ban.md) | Protecting SSH from brute-force attacks |
 | [SELinux Policy Management](security/selinux-policy-management.md) | Enforcing mandatory access controls |
-| [Network Traffic Analysis](security/network-traffic-analysis.md) | Packet inspection and troubleshooting |
+| [Network Traffic Analysis](https://github.com/k3rn3l-p4n1k-l4b/Enterprise-Threat-Detection-Lab/blob/main/Suricata-Wazuh-Threat-Detection-Lab.md) | Packet inspection and troubleshooting |
 | [SIEM & Endpoint Deployment](https://github.com/k3rn3l-p4n1k-l4b/Enterprise-Threat-Detection-Lab/tree/main) | Installing & Configuring Wazuh Server and Indexers |
 
 ---
